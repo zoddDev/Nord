@@ -55,7 +55,7 @@
     <feature id="editing.completion.postfix" count="4" last-shown="0" last-used="1595158668672" shown-count="0" />
     <feature id="refactoring.introduceVariable.incompleteStatement" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="dir.diff" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.select.word" count="703" last-shown="0" last-used="1598967110103" shown-count="0" />
+    <feature id="editing.select.word" count="704" last-shown="0" last-used="1614123222961" shown-count="0" />
     <feature id="editing.add.carets.using.double.ctrl" count="2" last-shown="0" last-used="1592843897977" shown-count="0" />
     <feature id="codeassists.quickjavadoc.lookup" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="ui.scheme.quickswitch" count="0" last-shown="0" last-used="0" shown-count="0" />

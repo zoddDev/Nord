@@ -9,7 +9,6 @@
     "C_Cpp.updateChannel": "Insiders",
     "workbench.colorTheme": "Nord Deep",
     "terminal.integrated.shell.linux": "/bin/fish",
-    "window.zoomLevel": 0,
     "go.autocompleteUnimportedPackages": true,
     // "go.inferGopath": false,
     // "go.gopath": ""

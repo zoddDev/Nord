@@ -25,6 +25,8 @@
             "file:///home/zodd/.scripts"
         ],
         "files2": [
+            "file:///home/zodd/Downloads/nord%20firefox/readme.txt",
+            "file:///home/zodd/Downloads/fontawesome-free-5.15.2-desktop/otfs/README.md",
             "file:///tmp/mozilla_zodd0/TheSimpsons2019.soil",
             "file:///tmp/mozilla_zodd0/BankAccount.use",
             "file:///tmp/mozilla_zodd0/Family2019.use",
@@ -94,8 +96,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -104,7 +105,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/zodd/Documents/Use-Workspace/Practica2",
                                         "external": "file:///home/zodd/Documents/Use-Workspace/Practica2",
                                         "path": "/home/zodd/Documents/Use-Workspace/Practica2",
                                         "scheme": "file"
@@ -218,6 +218,28 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/zodd/Downloads/nord%20firefox/readme.txt",
+                                        "path": "/home/zodd/Downloads/nord firefox/readme.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/nord firefox/readme.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/zodd/Downloads/fontawesome-free-5.15.2-desktop/otfs/README.md",
+                                        "path": "/home/zodd/Downloads/fontawesome-free-5.15.2-desktop/otfs/README.md",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/fontawesome-free-5.15.2-desktop/otfs/README.md"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///tmp/mozilla_zodd0/TheSimpsons2019.soil",
                                         "path": "/tmp/mozilla_zodd0/TheSimpsons2019.soil",
                                         "scheme": "file"
@@ -303,28 +325,6 @@
                                     "label": "~/Desktop/goliveaudio.sh"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/zodd/Dropbox/Programming/Python/japanese-quiz/list.txt",
-                                        "path": "/home/zodd/Dropbox/Programming/Python/japanese-quiz/list.txt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Dropbox/Programming/Python/japanese-quiz/list.txt"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/zodd/Documents/ropa",
-                                        "path": "/home/zodd/Documents/ropa",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Documents/ropa"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -357,14 +357,16 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save"
+                        "label": "&&Save",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Save &&As..."
+                        "label": "Save &&As...",
+                        "enabled": false
                     },
                     {
-                        "id": "workbench.action.files.saveAll",
+                        "id": "saveAll",
                         "label": "Save A&&ll",
                         "enabled": false
                     },
@@ -420,6 +422,10 @@
                                 {
                                     "id": "workbench.action.selectIconTheme",
                                     "label": "File &&Icon Theme"
+                                },
+                                {
+                                    "id": "workbench.action.selectProductIconTheme",
+                                    "label": "&&Product Icon Theme"
                                 }
                             ]
                         }
@@ -429,15 +435,18 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File"
+                        "label": "Re&&vert File",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Close Editor"
+                        "label": "&&Close Editor",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "Close &&Folder",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -482,11 +491,13 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find"
+                        "label": "&&Find",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace"
+                        "label": "&&Replace",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -513,10 +524,6 @@
                     {
                         "id": "editor.emmet.action.expandAbbreviation",
                         "label": "Emmet: E&&xpand Abbreviation"
-                    },
-                    {
-                        "id": "workbench.action.showEmmetCommands",
-                        "label": "E&&mmet..."
                     }
                 ]
             },
@@ -637,8 +644,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -831,8 +837,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -983,23 +988,28 @@
                     },
                     {
                         "id": "editor.action.revealDefinition",
-                        "label": "Go to &&Definition"
+                        "label": "Go to &&Definition",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.revealDeclaration",
-                        "label": "Go to &&Declaration"
+                        "label": "Go to &&Declaration",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToTypeDefinition",
-                        "label": "Go to &&Type Definition"
+                        "label": "Go to &&Type Definition",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToImplementation",
-                        "label": "Go to &&Implementations"
+                        "label": "Go to &&Implementations",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToReferences",
-                        "label": "Go to &&References"
+                        "label": "Go to &&References",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1061,7 +1071,8 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations"
+                        "label": "Open &&Configurations",
+                        "enabled": false
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1258,7 +1269,7 @@
                     },
                     {
                         "id": "workbench.action.toggleDevTools",
-                        "label": "&&Toggle Developer Tools"
+                        "label": "Toggle Developer Tools"
                     },
                     {
                         "id": "workbench.action.openProcessExplorer",
@@ -1303,10 +1314,6 @@
             "workbench.action.files.saveAs": {
                 "label": "Ctrl+Alt+S",
                 "userSettingsLabel": "ctrl+alt+s"
-            },
-            "workbench.action.files.saveAll": {
-                "label": "Ctrl+Shift+S",
-                "userSettingsLabel": "ctrl+shift+s"
             },
             "workbench.action.openSettings": {
                 "label": "Ctrl+,",
@@ -1692,14 +1699,13 @@
     "themeBackground": "#232731",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/zodd/Documents/Use-Workspace/Practica2",
-            "backupPath": "/home/zodd/.config/Code - OSS/Backups/2802e2ef7cd094cf2b984a13996e9f91",
+            "backupPath": "/home/zodd/.config/Code - OSS/Backups/1614113551592",
             "uiState": {
                 "mode": 1,
-                "x": 22,
-                "y": 50,
-                "width": 1876,
-                "height": 1008
+                "x": 164,
+                "y": 118,
+                "width": 1120,
+                "height": 881
             }
         },
         "openedWindows": []

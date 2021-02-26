@@ -25,6 +25,7 @@
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/zipfs.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jfr.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jfxswt.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jsse.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/management-agent.jar!/" type="simple" />
@@ -209,6 +210,7 @@
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/zipfs.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jfr.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jfxswt.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jsse.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/management-agent.jar!/" type="simple" />
@@ -216,7 +218,6 @@
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/deploy.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/javaws.jar!/" type="simple" />
-            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jfr.jar!/" type="simple" />
             <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/plugin.jar!/" type="simple" />
           </root>
         </classPath>

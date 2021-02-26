@@ -10,7 +10,7 @@
     <property name="PluginConfigurable.selectionTab" value="1" />
     <property name="SettingsSearchHistory" value="close tab&#10;icon&#10;ic&#10;italic&#10;dracu" />
     <property name="UITheme.relaunch" value="true" />
-    <property name="appcds.runOnSecondStart" value="IC-202.7660.26-3cc865d8c3bf3bb8ad291874a2dde694ebb6a008c93bcf279e9a09c9af1c5012" />
+    <property name="appcds.runOnSecondStart" value="IC-202.7660.26-7cea97612fd45668b1eb0670009829f557037cc7384dce59a678ad75f2377220" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Sources" />
@@ -31,7 +31,7 @@
     <property name="mt.showInstallAtom" value="true" />
     <property name="packagesearch.endpoint.url.fulltext" value="https://package-search.services.jetbrains.com/api/search/idea/fulltext" />
     <property name="packagesearch.endpoint.url.suggest" value="https://package-search.services.jetbrains.com/api/search/idea/suggest" />
-    <property name="packagesearch.status.updated.ts" value="1606057427655" />
+    <property name="packagesearch.status.updated.ts" value="1614123205666" />
     <property name="project.wizard.group" value="JAVA_MODULE" />
     <property name="seenTips" value="CreateTargetTag.html" />
     <property name="selected.color.option.type" value="ABSTRACT_CLASS_NAME_ATTRIBUTES" />

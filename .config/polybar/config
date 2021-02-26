@@ -33,12 +33,13 @@ magenta = #BF616A
 white = #D8DEE9
 pink = #C394B4
 blue = #81a1c1
+black = #3B4252
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [bar/example]
 width = 100%
-height = 18
+height = 28
 radius = 0.0
 fixed-center = true
 
@@ -48,22 +49,22 @@ foreground = ${colors.foreground}
 padding-left = 0
 padding-right = 0
 
-border-size = 5
+border-size = 8
 border-color = ${colors.background} 
 
-module-margin-left = 1
-module-margin-right = 1
+module-margin-left = 0
+module-margin-right = 0
 
-font-0 = "Inconsolata CondensedBlack:size=12;3"
-font-1 = "SauceCodePro Nerd Font Mono:size=20;5"
+font-0 = "Inconsolata CondensedBlack:size=13;3"
+font-1 = "SauceCodePro Nerd Font Mono:size=22;6"
 font-2 = "Material Icons:pixelsize=15;5"
 font-3 = "Sinji:pixelsize=15;5"
 font-4 = "Togalite medium:pixelsize=11;2"
 
 ; MODULES SETUP
-modules-left = theme-swap bspwm kernel-name
-modules-center = windowtitle spotify
-modules-right = pacman-updates filesystem cpu memory volume date shutdown
+modules-left = theme-swap left1 bspwm left2 kernel-name
+modules-center = medium1 windowtitle spotify medium2
+modules-right = notification-center right1 pacman-updates filesystem cpu memory volume date right2 shutdown
 
 ;tray-position = center
 ;tray-padding = 2
@@ -74,41 +75,72 @@ cursor-scroll = pointer
 
 line-size = 2
 
-separator = %{F#4C566A}|%{F-}
+;separator = %{F#4C566A}|%{F-}
+
+[module/left1]
+type = custom/text
+content-foreground = ${colors.black}
+content = " "
+
+[module/left2]
+type = custom/text
+content-foreground = ${colors.black}
+content = ""
+
+[module/medium1]
+type = custom/text
+content-foreground = ${colors.black}
+content = " "
+
+[module/medium2]
+type = custom/text
+content-foreground = ${colors.black}
+content = ""
+
+[module/right1]
+type = custom/text
+content-foreground = ${colors.black}
+content = " "
+
+[module/right2]
+type = custom/text
+content-foreground = ${colors.black}
+content = ""
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/bspwm]
 type = internal/bspwm
-ws-icon-0 = TERM;%{F#A3BE8C}term
-ws-icon-1 = WEB;%{F#BF616A}web
-ws-icon-2 = CODE;%{F#EBCB8B}code
-ws-icon-3 = MISC;%{F#81A1C1}misc
-ws-icon-4 = EDIT;%{F#B48EAD}edit
-ws-icon-5 = CHAT;%{F#88C0D0}chat
-ws-icon-6 = DISCORD;%{F#A3BE8C}disc
-ws-icon-7 = MUSIC;%{F#EBCB8B}mus
-ws-icon-default = ♟
+;ws-icon-0 = TERM;%{F#A3BE8C}
+;ws-icon-1 = WEB;%{F#D08770}
+;ws-icon-2 = CODE;%{F#81A1C1}﬏
+;ws-icon-3 = MISC;%{F#EBCB8B}
+;ws-icon-4 = EDIT;%{F#B48EAD}
+;ws-icon-5 = CHAT;%{F#88C0D0}
+;ws-icon-6 = DISCORD;%{F#D08770}ﭮ
+;ws-icon-7 = MUSIC;%{F#A3BE8C}
+;ws-icon-default = ♟
 
-label-focused = "%icon%@"
-;label-focused-background = #303543
-label-focused-underline= ${colors.white}
-label-focused-foreground = ${colors.foreground}
+label-focused = "%name%"
+label-focused-background = ${colors.black}
+;label-focused-underline= ${colors.cyan}
+label-focused-foreground = #88C0D0
 label-focused-padding = 2
 
-label-occupied = %icon%*
-;label-occupied-background = ${colors.background}
-label-occupied-foreground = #e5e9f0
+label-occupied = %name%
+label-occupied-background = ${colors.black}
+label-occupied-foreground = #D8DEE9
 label-occupied-padding = 2
 
-label-urgent = %icon%
-;label-urgent-background = ${colors.red}
-label-urgent-foreground = #e5e9f0
+label-urgent = %name%
+label-urgent-background = ${colors.black}
+label-urgent-foreground = #BF616A
 label-urgent-padding = 2
 
-label-empty = %icon% 
-;label-empty-background = ${colors.background}
-label-empty-foreground = #e5e9f0
+label-empty = %name% 
+label-empty-background = ${colors.black}
+label-empty-foreground = #2E3440
 label-empty-padding = 2
 
 
@@ -194,9 +226,21 @@ interval = 100
 label = "  %output%  "
 
 ;format-background = ${colors.white}
-format-foreground = ${colors.white}
+format-foreground = ${colors.blue}
 
 click-left = $HOME/.config/polybar/scripts/theme-swap.sh
+
+
+[module/notification-center]
+type = custom/script
+exec = echo 
+interval = 100
+label = "  %output%  "
+
+;format-background = ${colors.white}
+format-foreground = ${colors.white}
+
+click-left = $HOME/.scripts/rofi_notif_center.sh
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
@@ -204,7 +248,7 @@ click-left = $HOME/.config/polybar/scripts/theme-swap.sh
 type = custom/script
 exec = uname -r
 interval = 10000
-label = "   %output% "
+label = "    %output% "
 format-foreground = ${colors.white}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -249,13 +293,15 @@ format-unmounted = <label-unmounted>
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = "  %percentage_used%% "
+label-mounted = "    %percentage_used%% "
 
 ; Available tokens:
 ;   %mountpoint%
 ; Default: %mountpoint% is not mounted
 label-unmounted = %mountpoint%: not mounted
 label-unmounted-foreground = #55
+label-unmounted-background = ${colors.black}
+label-mounted-background = ${colors.black}
 
 label-mounted-foreground = ${colors.blue}
 
@@ -265,10 +311,10 @@ label-mounted-foreground = ${colors.blue}
 type = custom/script
 exec = $HOME/.config/polybar/scripts/pacman-updates.sh
 interval = 1000
-label = "   %output% "
+label = "  %output% "
 format-foreground = ${colors.green}
 format-foreground-error = ${colors.red}
-;format-background = ${colors.green}
+format-background = ${colors.black}
 click-left = kitty -e $SHELL -c 'sudo pacman -Syu'
 click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL -c 'yay -Qu | less'
 
@@ -276,7 +322,7 @@ click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL 
 [module/windowtitle]
 type = internal/xwindow
 format = <label>
-;format-background = ${colors.cyan}
+format-background = ${colors.black}
 format-foreground = ${colors.cyan}
 format-padding = 1
 label = "  %title%"
@@ -288,20 +334,20 @@ label-empty-foreground = ${colors.cyan}
 [module/volume]
 type = internal/pulseaudio
 format-volume =  "<ramp-volume> <label-volume>"
-ramp-volume-0 =
+ramp-volume-0 ="    "
 ramp-volume-0-font = 1
-ramp-volume-1 =墳
+ramp-volume-1 ="   墳"
 ramp-volume-1-font = 1
-ramp-volume-2 =墳
+ramp-volume-2 ="   墳"
 ramp-volume-2-font = 1
-;format-volume-background = ${colors.cyan}
+format-volume-background = ${colors.black}
 format-volume-foreground = ${colors.cyan}
 format-volume-padding = 1
 
 format-muted = <label-muted>
-;format-muted-background = ${colors.white} 	
-format-muted-foreground = ${colors.white}
-label-muted ="  "
+format-muted-background = ${colors.black} 	
+format-muted-foreground = ${colors.red}
+label-muted ="   "
 format-muted-font = 2
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/battery]
@@ -353,9 +399,9 @@ format-disconnected-foreground = ${colors.background}
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix ="   "
+format-prefix ="      "
 format = <label>
-;format-background = ${colors.pink}
+format-background = ${colors.black}
 format-foreground = ${colors.pink}
 format-padding = 0
 
@@ -367,12 +413,12 @@ type = internal/memory
 ; Seconds to sleep between updates
 interval = 3
 
-label = "  %percentage_used%%"
+label = "    %percentage_used%%"
 
 format-prefix-padding = 2
 format-prefix-font = 2
 format-prefix-foreground = #ffffff
-;format-background = ${colors.background}
+format-background = ${colors.black}
 format-foreground = ${colors.pink}
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -403,9 +449,9 @@ type = internal/cpu
 
 interval = 1
 format = <label>
-label = "  %percentage%% "
+label = "    %percentage%% "
 
-;format-background = ${colors.yellow}
+format-background = ${colors.black}
 format-foreground = ${colors.yellow}
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -416,22 +462,22 @@ interval = 1
 date = 
 date-alt = "  﨟  %A, %b %d -"
 
-time = "  %I:%M %p  "
-time-alt = "%I:%M:%S %p  "
+time = "    %H:%M "
+time-alt = "%I:%M:%S %p "
 
 ;format-prefix = ""
 format-prefix-padding = 1
 format-prefix-font = 1
 format-prefix-foreground = #ffffff
-;format-background = ${colors.background}
+format-background = ${colors.black}
 format-foreground = ${colors.white}
 
 label = %date% %time%
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/shutdown]
 type = custom/text
-content = "ﴚ"
-;content-background = ${colors.red}
+content = " ﴚ"
+;content-background = ${colors.black}
 content-foreground = ${colors.red}
 content-padding = 2
 click-left = $HOME/.config/polybar/scripts/rofi-poweroff.sh

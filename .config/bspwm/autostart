@@ -1,7 +1,12 @@
 #!/bin/bash
 
-bspc monitor -d TERM WEB CODE MISC EDIT CHAT DISCORD MUSIC
+#bspc monitor -d TERM WEB CODE MISC EDIT CHAT DISCORD MUSIC
+bspc monitor -d   ﬏    ﭮ 
+for i in $(bspc query -D --names)
+do
+    bsp-layout set tall $i -- --master-size 0.65 &
+done
 
 bspc config border_width         2
-bspc config focused_border_color "#6C6F93"
+bspc config focused_border_color "#3B4252"
 bspc config normal_border_color "#282e3a"
