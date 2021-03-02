@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
- <circle style="opacity:.2" cx="32" cy="33" r="28"/>
- <circle style="fill:#8d348e" cx="32" cy="32" r="28"/>
- <circle style="opacity:.3" cx="34.5" cy="29.5" r="20.5"/>
- <circle style="opacity:.2" cx="32" cy="33" r="14"/>
- <circle style="fill:#ffffff" cx="32" cy="32" r="14"/>
- <path style="fill:#691f69" transform="matrix(1.5155445,0,0,1.5,-3.653879,-4.9873848)" d="m27.154517 24.658257-3.464101 2-3.464102 1.999999v-4-3.999999l3.464102 2z"/>
- <path style="fill:#ffffff;opacity:.1" d="M 32 4 A 28 28 0 0 0 4 32 A 28 28 0 0 0 4.0214844 32.585938 A 28 28 0 0 1 32 5 A 28 28 0 0 1 59.978516 32.414062 A 28 28 0 0 0 60 32 A 28 28 0 0 0 32 4 z"/>
-</svg>
+<svg height="48" width="48" xmlns="http://www.w3.org/2000/svg"><circle cx="23.940615" cy="31.534513" fill="#37a8d6" opacity=".99" r="13.232998" transform="matrix(1.75830584759 0 0 1.75830608345 -18.15909274367 -30.97874795549)"/><g fill-rule="evenodd" transform="matrix(1.2642731 0 0 1.2642731 -6.310706 -7.044258)"><path d="m17.763672 15.570312v9.74707 9.747071l8.103515-4.873536 8.103516-4.873535-8.103516-4.873535z" fill="#fff" fill-opacity=".53169"/><path d="m17.763672 25.317382 8.103515 4.873535v-9.74707z" fill="#f5f5f5" fill-opacity=".953901"/></g></svg>

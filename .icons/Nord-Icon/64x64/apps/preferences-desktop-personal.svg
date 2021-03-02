@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" version="1">
- <circle style="opacity:0.2;fill:#00100f" cx="32" cy="33" r="28"/>
- <circle style="fill:#e4e4e4" cx="32" cy="32" r="28"/>
- <g style="opacity:0.1" transform="translate(0,1)">
-  <path d="m 32,14 c -3.8668,0 -7,3.1346 -7,7 0,3.8654 3.1332,7 7,7 3.8668,0 7,-3.1346 7,-7 0,-3.8654 -3.1332,-7 -7,-7 z"/>
-  <path d="m 32,33.000002 c -13.9986,0.0084 -14,8.861538 -14,8.861538 v 3.6 c 0,0 2.584598,5.53846 14,5.53846 11.415402,0 14,-5.53846 14,-5.53846 v -3.6 c 0,0 0,-8.867076 -13.9972,-8.861538 z"/>
- </g>
- <path style="fill:#188eee" d="m 32,14 c -3.8668,0 -7,3.1346 -7,7 0,3.8654 3.1332,7 7,7 3.8668,0 7,-3.1346 7,-7 0,-3.8654 -3.1332,-7 -7,-7 z"/>
- <path style="fill:#188eee" d="m 32,33.000002 c -13.9986,0.0084 -14,8.861538 -14,8.861538 v 3.6 c 0,0 2.584598,5.53846 14,5.53846 11.415402,0 14,-5.53846 14,-5.53846 v -3.6 c 0,0 0,-8.867076 -13.9972,-8.861538 z"/>
- <path style="opacity:0.2;fill:#ffffff" d="M 32 4 A 28 28 0 0 0 4 32 A 28 28 0 0 0 4.0175781 32.492188 A 28 28 0 0 1 32 5 A 28 28 0 0 1 59.974609 32.492188 A 28 28 0 0 0 60 32 A 28 28 0 0 0 32 4 z"/>
-</svg>
+<svg height="48" width="48" xmlns="http://www.w3.org/2000/svg"><rect fill="#ccc" height="44" ry=".125" transform="rotate(-90)" width="32" x="-44" y="2"/><path d="m4 14h16v16h-16z" fill="#6f7c91"/><circle cx="11.5625" cy="18.5625" fill="#fff" r="3.625" stroke-width="1.208333"/><path d="m6 28c0-6 12-6 12 0z" fill="#fff"/><g fill="#6f7c91" stroke="#6f7c91" stroke-linecap="round" stroke-width="2"><path d="m23 18h9"/><path d="m35 18h7"/><path d="m23 24h12"/><path d="m38 24h4"/><path d="m5 36h16"/><path d="m25 36h9"/><path d="m5 40h10"/><path d="m21 40h8"/></g></svg>
