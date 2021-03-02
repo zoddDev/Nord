@@ -8,7 +8,7 @@ virtual-root='file:///home/zodd/Documents/git-lab/dotfiles/setup-scripts'
 
 [preferences/editor]
 editor-font='Monoid Nerd Font Light Semi-Condensed 9'
-scheme='gruvbox-dark'
+scheme='nord-gedit'
 use-default-font=false
 wrap-last-split-mode='word'
 
@@ -20,5 +20,5 @@ bottom-panel-active-page='GeditExternalToolsShellOutput'
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(1856, 944)
+size=(1876, 964)
 state=128

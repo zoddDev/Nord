@@ -12,7 +12,7 @@ configuration {
 	selbg:                       #81a1c1;
 	actbg:                       #4c566a;
 	urgbg:                       #bf616a;
-	winbg:                       #66cccc;
+	winbg:                       #88C0D0;
 
 	selected-normal-foreground:  @text-color;
 	normal-foreground:           @text-color;
@@ -47,7 +47,7 @@ window {
 	width:		 20%;
 	orientation: horizontal;
 	children:	 [mainbox];
-    border-radius: 12px;
+    border-radius: 6px;
     border: 3px solid;
     border-color: #3b4252;
 }
@@ -95,19 +95,19 @@ entry {
 
 element normal.normal {
 	background-color: @bg;
-    border-radius:    8px;
+    border-radius:    6px;
 	text-color:       @normal-foreground;
 }
 
 element normal.urgent {
 	background-color: @bg;
-    border-radius:    8px;
+    border-radius:    6px;
 	text-color:       @urgent-foreground;
 }
 
 element normal.active {
 	background-color: @bg;
-    border-radius:    8px;
+    border-radius:    6px;
 	text-color:       @active-foreground;
 }
 
@@ -128,26 +128,26 @@ element selected.active {
 
 element alternate.normal {
 	background-color: @bg;
-    border-radius:    8px;
+    border-radius:    6px;
 	text-color:       @normal-foreground;
 }
 
 element alternate.urgent {
 	background-color: @bg;
-    border-radius:    8px;
+    border-radius:    6px;
 	text-color:       @urgent-foreground;
 }
 
 element alternate.active {
 	background-color: @bg;
-    border-radius:    8px;
+    border-radius:    6px;
 	text-color:       @active-foreground;
 }
 element-icon {
 	size: 7ch;
 }
 element.selected {
-    border-radius: 8px;
+    border-radius: 6px;
 	border:           0 0 0 5px solid;
 	border-color:	    @winbg;
 }

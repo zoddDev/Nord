@@ -2,10 +2,10 @@
     "telemetry.machineId": "e6d097e8d681b4cd087e8a0455801539c217426734707c60b7b658907c0f2323",
     "openedPathsList": {
         "workspaces3": [
+            "file:///home/zodd/Downloads/git-downloads/RastreoCovid19",
             "file:///home/zodd/Documents/Use-Workspace/Practica2",
             "file:///home/zodd/Documents/Use-Workspace/Library",
             "file:///home/zodd/Dropbox/Programming/Python/Django/RastreoCovid19",
-            "file:///home/zodd/Downloads/git-downloads/RastreoCovid19",
             "file:///home/zodd/Dropbox/Programming/Python/Tests/Functional",
             "file:///home/zodd/Dropbox/Programming/Python/Django/Tests/TShirts",
             "file:///home/zodd/Dropbox/Programming/Python/japanese-quiz",
@@ -96,10 +96,23 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "fsPath": "/home/zodd/Downloads/git-downloads/RastreoCovid19",
+                                        "external": "file:///home/zodd/Downloads/git-downloads/RastreoCovid19",
+                                        "path": "/home/zodd/Downloads/git-downloads/RastreoCovid19",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/git-downloads/RastreoCovid19"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -133,17 +146,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Dropbox/Programming/Python/Django/RastreoCovid19"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/zodd/Downloads/git-downloads/RastreoCovid19",
-                                        "path": "/home/zodd/Downloads/git-downloads/RastreoCovid19",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Downloads/git-downloads/RastreoCovid19"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -357,13 +359,11 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save",
-                        "enabled": false
+                        "label": "&&Save"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Save &&As...",
-                        "enabled": false
+                        "label": "Save &&As..."
                     },
                     {
                         "id": "saveAll",
@@ -435,18 +435,15 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File",
-                        "enabled": false
+                        "label": "Re&&vert File"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Close Editor",
-                        "enabled": false
+                        "label": "&&Close Editor"
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder",
-                        "enabled": false
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -491,13 +488,11 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find",
-                        "enabled": false
+                        "label": "&&Find"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace",
-                        "enabled": false
+                        "label": "&&Replace"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -644,7 +639,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -1699,13 +1695,14 @@
     "themeBackground": "#232731",
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/zodd/.config/Code - OSS/Backups/1614113551592",
+            "folder": "file:///home/zodd/Downloads/git-downloads/RastreoCovid19",
+            "backupPath": "/home/zodd/.config/Code - OSS/Backups/b378c648fda3e6e2dc51d2359adc4edb",
             "uiState": {
                 "mode": 1,
-                "x": 164,
-                "y": 118,
-                "width": 1120,
-                "height": 881
+                "x": 22,
+                "y": 66,
+                "width": 2516,
+                "height": 992
             }
         },
         "openedWindows": []

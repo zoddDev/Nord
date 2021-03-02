@@ -28,7 +28,7 @@ window {
     border:                         3px solid 3px solid 3px solid 1.5%;
     //border:							0% 0% 0% 1.5%;
 	border-color:					#3b4252;
-    border-radius:                  12px 12px 12px 36px;
+    border-radius:                  6px 6px 6px 6px;
     //border-radius:                  0.4% 0.4% 0.4% 2.5%;
     height:                         49.50%;
     width:                          40%;
@@ -62,7 +62,8 @@ inputbar {
     text-color:                     @foreground;
     expand:                         false;
 	border:							0% 0% 0.3% 0.2%;
-    border-radius:                  1.5% 1.0% 1.5% 1.5%;
+    /*border-radius:                  1.5% 1.0% 1.5% 1.5%;*/
+    border-radius:                  6px 6px 6px 6px;
 	border-color:					@border-alt;
     margin:                         0% 17% 0% 0%;
     padding:                        1%;
@@ -81,7 +82,8 @@ listview {
 mainbox {
     background-color:               @background;
 	border:							0% 0% 0% 1.5%;
-    border-radius:                  0.4% 0.4% 0.4% 36px;
+    /*border-radius:                  0.4% 0.4% 0.4% 36px;*/
+    border-radius:                  6px 6px 6px 6px;
 	border-color:					@border-alt;
     children:                       [ inputbar, listview ];
     spacing:                       	2%;
@@ -112,7 +114,8 @@ element normal.urgent,
 element alternate.urgent {
     background-color:               @urgent;
     text-color:                     @foreground;
-    border-radius:                  1%;
+    /*border-radius:                  1%;*/
+    border-radius:                  6px 6px 6px 6px;
 }
 
 element normal.active,
@@ -125,7 +128,8 @@ element selected {
     background-color:               @selected;
     text-color:                     @foreground;
 	border:							0% 0% 0.3% 0.2%;
-    border-radius:                  1.5% 1.0% 1.5% 1.5%;
+    /*border-radius:                  1.5% 1.0% 1.5% 1.5%;*/
+    border-radius:                  6px 6px 6px 6px;
     border-color:                  	@border-alt;
 }
 
