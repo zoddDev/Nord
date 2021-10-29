@@ -1,1 +1,1 @@
-$HOME/.config/rofi/launchers/ribbon/launcher.sh
+rofi -font "Iosevka Bold 11" -show drun -show-icons -width 25 -lines 11 -config ~/.config/rofi/config
