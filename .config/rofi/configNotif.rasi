@@ -9,7 +9,7 @@ configuration {
 	background-color:            #2e3440;
     bg:                          #232831;
 	text-color:                  #eceff4;
-	selbg:                       #81a1c1;
+	selbg:                       @bg;
 	actbg:                       #4c566a;
 	urgbg:                       #bf616a;
 	winbg:                       #88C0D0;
@@ -146,8 +146,30 @@ element alternate.active {
 element-icon {
 	size: 7ch;
 }
+
+element-icon selected.normal {
+	size: 7ch;
+    background-color: @actbg;
+}
+
+
 element.selected {
     border-radius: 6px;
 	border:           0 0 0 5px solid;
 	border-color:	    @winbg;
+    background-color: @actbg;
 }
+
+element-text selected.normal {
+    background-color: @actbg;
+}
+
+element-icon normal.normal,
+element-icon alternate.normal {
+    background-color: @bg;
+}
+element-text normal.normal,
+element-text alternate.normal {
+    background-color: @bg;
+}
+
